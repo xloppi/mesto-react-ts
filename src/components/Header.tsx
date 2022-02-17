@@ -1,11 +1,11 @@
 import { FC } from "react";
-import logo from '../images/logo.svg';
-
+import { Logo } from "./styles/Header.styles";
+import logo from "../images/logo.svg"
 
 const Header: FC = () => {
     return(
         <header>
-            <img src={logo} alt="logo"/>
+            <Logo src={logo}/>
             <nav>
               <p>email@email.ru</p>
               <p>Выйти</p>

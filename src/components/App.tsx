@@ -7,7 +7,7 @@ const AppWrapper = styled.div`
   color: white;
 `;
 
-const AppContainer = styled.div`
+const Container = styled.div`
   width: 880px;
   max-width: 100%;
   margin: 0 auto;
@@ -16,9 +16,9 @@ const AppContainer = styled.div`
 const App = () => {
   return (
       <AppWrapper>
-        <AppContainer>
+        <Container>
           <Header />
-        </AppContainer>
+        </Container>
       </AppWrapper>
   );
 };
