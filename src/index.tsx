@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+import App from './App';
 import {Provider} from 'react-redux';
 import { store } from './store';
-import GlobalStyles from './components/styles/global';
+import GlobalStyles from './styles/global';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(

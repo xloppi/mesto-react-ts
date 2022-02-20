@@ -48,3 +48,33 @@ export const ChangeAvatarButton = styled.button`
     opacity: 1;
   }
 `
+
+export const ProfileContainer = styled.section`
+  display: flex;
+  align-items: center;
+`
+
+export const ProfileInfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+`
+
+export const ProfileInfo = styled.div`
+display: flex;
+margin-bottom: 7px;
+align-items: baseline;
+`
+
+export const ProfileTitle = styled.h2`
+  font-weight: 500;
+  font-size: 42px;
+  vertical-align: bottom;
+  margin-right: 18px;
+`
+
+export const ProfileAbout = styled.p`
+font-size: 18px;
+line-height: 22px;
+`
+
