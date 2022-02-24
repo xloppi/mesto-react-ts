@@ -23,4 +23,5 @@ export const StyledAddPlaceButton = styled(StyledButton)`
   background-image: url(${addButton});
   background-size: 22px 22px;
   border-radius: 2px;
+  margin-left: auto;
 `;
