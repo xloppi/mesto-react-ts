@@ -1,10 +1,15 @@
+import Card from "../Card";
+import { StyledList } from "./List.styles";
 
 
 const List = () => {
   return (
-    <ul>
-
-    </ul>
+    <StyledList>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </StyledList>
   )
 }
 

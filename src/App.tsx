@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 const AppWrapper = styled.div`
   min-height: 100vh;

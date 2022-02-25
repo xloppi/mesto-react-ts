@@ -1,14 +1,15 @@
-import { StyledCard } from "./Card.styles";
+import { CardInfo, StyledCard, StyledCardImg, StyledCardTitle } from "./Card.styles";
+import CardImg from "../../images/kar.jpg"
 
 
 const Card = () => {
   return (
     <StyledCard>
-      <img alt="картинка"></img>
-      <div>
-        <h3></h3>
-        <button></button>
-      </div>
+        <StyledCardImg src={CardImg} alt="картинка"></StyledCardImg>
+        <CardInfo>
+          <StyledCardTitle>Карачаевск</StyledCardTitle>
+          <button>Лайк</button>
+        </CardInfo>
     </StyledCard>
   )
 }
