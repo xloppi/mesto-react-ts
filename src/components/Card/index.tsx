@@ -1,4 +1,4 @@
-import { CardInfo, StyledCard, StyledCardImg, StyledCardTitle } from "./Card.styles";
+import { CardInfo, LikeButton, StyledCard, StyledCardImg, StyledCardTitle } from "./Card.styles";
 import CardImg from "../../images/kar.jpg"
 
 
@@ -8,7 +8,7 @@ const Card = () => {
         <StyledCardImg src={CardImg} alt="картинка"></StyledCardImg>
         <CardInfo>
           <StyledCardTitle>Карачаевск</StyledCardTitle>
-          <button>Лайк</button>
+          <LikeButton />
         </CardInfo>
     </StyledCard>
   )
