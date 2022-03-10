@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
 
@@ -12,6 +13,7 @@ const Container = styled.div`
   width: 880px;
   max-width: 100%;
   margin: 0 auto;
+  padding: 0 0 60px;
 `
 
 const App = () => {
@@ -20,6 +22,7 @@ const App = () => {
         <Container>
           <Header />
           <Main />
+          <Footer />
         </Container>
       </AppWrapper>
   );
