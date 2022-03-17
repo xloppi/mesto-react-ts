@@ -13,8 +13,15 @@ import avatar from "../../images/avatar.jpg";
 import EditProfileButton from "../UI/Button/EditProfileButton";
 import { StyledAddPlaceButton } from "../UI/Button/Button.styles";
 import List from "../List";
+import { useDispatch } from "react-redux";
 
 const Main = () => {
+  const dispatch = useDispatch()
+
+  const handleAddPlaceClick = () => {
+    dispatch({type:'MODAL_SHOW', modalType: 'ADD_PLACE'})
+  }
+
   return (
     <StyledMain>
       <ProfileContainer>
@@ -29,7 +36,7 @@ const Main = () => {
           </ProfileInfo>
           <ProfileAbout>Исследователь океана</ProfileAbout>
         </ProfileInfoContainer>
-        <StyledAddPlaceButton></StyledAddPlaceButton>
+        <StyledAddPlaceButton onClick={handleAddPlaceClick}></StyledAddPlaceButton>
       </ProfileContainer>
       <List />
     </StyledMain>

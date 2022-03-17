@@ -2,6 +2,8 @@ import styled from "styled-components";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import PopupAddPlace from "./components/PopupAddPlace";
+import PopupWithForm from "./components/PopupWithForm/PopupWithForm";
 
 const AppWrapper = styled.div`
   min-height: 100vh;
@@ -23,6 +25,7 @@ const App = () => {
           <Header />
           <Main />
           <Footer />
+          <PopupAddPlace />
         </Container>
       </AppWrapper>
   );

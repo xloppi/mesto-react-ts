@@ -2,7 +2,10 @@ import { combineReducers } from "redux";
 import { modalReducer } from "./modalReducer";
 import { userReducer } from "./userReducer";
 
-export const rootReduser = combineReducers({
+export const rootReducer = combineReducers({
     currentUser: userReducer,
     modal: modalReducer,
 })
+
+
+export type RootState = ReturnType<typeof rootReducer>
