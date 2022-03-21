@@ -31,6 +31,7 @@ export const Popup = styled.div`
 `
 
 export const PopupTitle = styled.h2`
+align-self: flex-start;
   font-size: 24px;
   line-height: 29px;
   font-weight: 900;

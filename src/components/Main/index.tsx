@@ -11,17 +11,10 @@ import {
 } from "./Main.styles";
 import avatar from "../../images/avatar.jpg";
 import EditProfileButton from "../UI/Button/EditProfileButton";
-import { StyledAddPlaceButton } from "../UI/Button/Button.styles";
 import List from "../List";
-import { useDispatch } from "react-redux";
+import AddPlaceButton from "../UI/Button/AddPlaceButton";
 
 const Main = () => {
-  const dispatch = useDispatch()
-
-  const handleAddPlaceClick = () => {
-    dispatch({type:'MODAL_SHOW', modalType: 'ADD_PLACE'})
-  }
-
   return (
     <StyledMain>
       <ProfileContainer>
@@ -32,11 +25,11 @@ const Main = () => {
         <ProfileInfoContainer>
           <ProfileInfo>
             <ProfileTitle>Жак-Ив Кусто</ProfileTitle>
-            <EditProfileButton></EditProfileButton>
+            <EditProfileButton />
           </ProfileInfo>
           <ProfileAbout>Исследователь океана</ProfileAbout>
         </ProfileInfoContainer>
-        <StyledAddPlaceButton onClick={handleAddPlaceClick}></StyledAddPlaceButton>
+        <AddPlaceButton />
       </ProfileContainer>
       <List />
     </StyledMain>

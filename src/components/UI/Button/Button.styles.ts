@@ -8,6 +8,7 @@ export const StyledButton = styled.button`
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 `;
 
 export const StyledEditProfileButton = styled(StyledButton)`

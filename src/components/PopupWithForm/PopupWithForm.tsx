@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { isPropertySignature } from "typescript";
 import { useTypedSelector } from "../../hooks/useTypedSelector";
 import { Popup, PopupCloseButton, PopupContainer, PopupFieldset, PopupSubmitButton, PopupTitle } from "./PopupWithForm.styles";
 
