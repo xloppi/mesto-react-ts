@@ -2,10 +2,12 @@ import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header";
+import List from "./components/List";
 import Login from "./components/Login/Login";
 import Main from "./components/Main";
 import PopupAddPlace from "./components/PopupAddPlace";
 import PopupEditProfile from "./components/PopupEditProfile/PopupEditProfile";
+import Register from "./components/Register/Register";
 
 const AppWrapper = styled.div`
   min-height: 100vh;
@@ -25,12 +27,11 @@ const App = () => {
       <AppWrapper>
         <Container>
           <Header />
-          <Login />
-          {/* <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="/signin" element={<App />} />
-            <Route path="/signup" element={<App />} />
-          </Routes> */}
+          <Routes>
+            <Route path="/" element={<List />} />
+            <Route path="/signin" element={<Login />} />
+            <Route path="/signup" element={<Register />} />
+          </Routes>
         </Container>
       </AppWrapper>
   );

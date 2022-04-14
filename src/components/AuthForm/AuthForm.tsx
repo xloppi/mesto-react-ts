@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 import { AuthContainer, AuthFieldset, AuthInput, AuthSubmit, AuthTitle } from "./AuthForm.styles";
 
 const AuthForm: FC = () => {
@@ -12,6 +13,7 @@ const AuthForm: FC = () => {
           <AuthSubmit>Войти</AuthSubmit>
         </AuthFieldset>
       </form>
+      <p><Link to="/signup">Зарегистрироваться</Link></p>
     </AuthContainer>
   )
 }

@@ -8,6 +8,7 @@ export const AuthContainer = styled.div`
 
 export const AuthTitle = styled.h2`
   text-align: center;
+  margin: 0 0 50px;
 `
 
 export const AuthFieldset = styled.fieldset`
